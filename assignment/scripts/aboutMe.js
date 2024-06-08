@@ -102,6 +102,19 @@ console.log(petStatus); // I can have more pets
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
 
+// i have already defined "pets" and "friendsPets" and assigned them to a value at the above line of code
+ pets = 0;
+ friendsPets = 2;
+ // Then, i will initialize mostPets varible
+let mostPets;
+if(pets > friendsPets){
+  mostPets = pets;
+}else{
+  mostPets = friendsPets;
+} 
+console.log(mostPets); // 2
+
+
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
@@ -111,7 +124,35 @@ console.log(petStatus); // I can have more pets
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
 
+// I will re-use my luckyNumber variable value that i define above line of code
+luckyNumber = 6;
+// I will initialize the luckyResult variable
+let luckyResult;
+switch(luckyNumber){
+  case 1:
+  luckyResult =  "First is the worst";
+  break;
+  case 2:
+  luckyResult =   "Second is the best";
+  break;
+  case 3:
+  luckyResult =  "Third is the one with the polka dot dress";
+  break;
+  default:
+    luckyResult = "Luck is what happens when preparation meets opportunity"
+}
+
+console.log(luckyResult); // "Luck is what happens when preparation meets opportunity"
+
+
+
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
+
+// I can't re-declare the variables, so i decided not to use KEYWORDS!
+ result;
+ adventurous = true;
+ result = (adventurous === true)? "Adventures are great!":"How about we stay home?";
+ console.log(result); // Adventures are great
 
 
 
